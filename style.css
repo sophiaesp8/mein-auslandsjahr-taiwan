@@ -1,0 +1,1222 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #222222;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+nav a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #d34a3a;
+}
+
+/* Header */
+.hero {
+    min-height: 650px;
+    background-image: url("images/taiwan-hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 8%;
+    padding: 40px;
+    max-width: 650px;
+}
+
+.hero-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin: 0 0 15px 0;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.hero-image {
+    display: none;
+}
+
+/* Hauptinhalt */
+main {
+    width: 84%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bereiche */
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.profile-section {
+    padding-top: 40px;
+}
+
+.profil-container {
+    display: grid;
+    grid-template-columns: minmax(240px, 380px) minmax(0, 1fr);
+    align-items: center;
+    gap: 70px;
+}
+
+.profil-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.profil-text h3 {
+    margin: -10px 0 24px;
+    font-size: 24px;
+}
+
+.profil-text p {
+    margin: 0 0 18px;
+}
+
+.uni-intro {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.uni-intro > div {
+    flex: 1;
+}
+
+.uni-intro h3 {
+    margin: 0 0 18px;
+    font-size: 28px;
+}
+
+.uni-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.uni-logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.uni-heading h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.campus-image {
+    display: block;
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.uni-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.fact,
+.uni-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.fact {
+    text-align: center;
+}
+
+.fact span {
+    font-size: 28px;
+}
+
+.fact h4,
+.fact p,
+.uni-card h4,
+.uni-card p {
+    margin: 0;
+}
+
+.student-life-header {
+    margin-bottom: 60px;
+}
+
+.section-label {
+    margin: 0 0 12px;
+    color: #d34a3a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.student-life-header h2 {
+    margin-bottom: 12px;
+}
+
+.student-life-header > p:last-child {
+    margin: 0;
+}
+
+.life-block {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.life-block.reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+}
+
+.life-block.reverse > img {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.life-block.reverse .life-text {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.life-block > img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.life-number {
+    margin: 0 0 10px;
+    color: #d34a3a;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.life-text h3 {
+    margin: 0 0 18px;
+    font-size: 30px;
+}
+
+.life-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.life-tags span {
+    padding: 7px 12px;
+    background-color: white;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.life-text > p:not(.life-number) {
+    margin: 0 0 18px;
+}
+
+.wohnen-section {
+    padding: 80px 0;
+}
+
+.wohnen-header {
+    max-width: 760px;
+    margin-bottom: 60px;
+}
+
+.wohnen-header h1 {
+    font-size: 48px;
+    margin: 10px 0 20px;
+}
+
+.small-label,
+.section-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.wohnen-main {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.wohnen-image img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.wohnen-content h2,
+.wohnungssuche h2 {
+    font-size: 32px;
+    margin: 8px 0 20px;
+}
+
+.wohnen-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.wohnen-fact {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.wohnen-fact span {
+    font-size: 24px;
+}
+
+.wohnen-fact p {
+    margin: 5px 0 0;
+    font-size: 15px;
+}
+
+.wohnen-tip {
+    background-color: #f6ddd8;
+    color: #222222;
+    padding: 28px 35px;
+    border-radius: 14px;
+    margin: 45px 0 70px;
+}
+
+.wohnen-tip .small-label {
+    color: #d84a3a;
+    margin: 0 0 12px;
+}
+
+.wohnen-tip p:last-child {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0;
+}
+
+.wohnungssuche-heading {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.housing-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.housing-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.housing-card h3 {
+    margin-top: 0;
+}
+
+.housing-link {
+    display: inline-block;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #222222;
+    text-decoration: none;
+}
+
+.housing-link:hover {
+    text-decoration: underline;
+}
+
+.essen-section {
+    padding: 100px 0;
+}
+
+.essen-header {
+    max-width: 720px;
+    margin-bottom: 70px;
+}
+
+.essen-header h2 {
+    font-size: 44px;
+    margin: 8px 0 16px;
+}
+
+.essen-label,
+.essen-number {
+    color: #d84a3a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.essen-label {
+    margin: 0 0 12px;
+}
+
+.essen-block {
+    margin-bottom: 90px;
+    clear: both;
+}
+
+.essen-description {
+    position: relative;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.essen-number {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.essen-description h3 {
+    font-size: 30px;
+    margin: 0 0 14px;
+}
+
+.essen-description p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.essen-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+}
+
+.essen-gallery.one-photo {
+    grid-template-columns: 1fr;
+}
+
+.essen-gallery.two-photos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: auto;
+}
+
+.essen-gallery img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+    min-width: 0;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
+}
+
+.essen-gallery.one-photo img {
+    height: 460px;
+}
+
+.night-market-gallery img:nth-child(2) {
+    object-position: center 25%;
+}
+
+.essen-favorites {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.essen-favorite {
+    position: relative;
+    height: 300px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.essen-favorite img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.essen-favorite figcaption {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    width: fit-content;
+    max-width: calc(100% - 28px);
+    padding: 9px 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.food-block {
+    margin-bottom: 90px;
+}
+
+.food-text {
+    max-width: 650px;
+    margin-bottom: 28px;
+}
+
+.food-number {
+    display: block;
+    color: #d84a3a;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.food-text h3 {
+    font-size: 30px;
+    margin: 0 0 12px;
+}
+
+.food-text p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.food-gallery {
+    display: grid;
+    gap: 18px;
+}
+
+.food-gallery img,
+.essen-gallery img,
+.favorite-item img,
+.essen-favorite img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
+}
+
+.food-gallery,
+.essen-gallery,
+.favorites-grid,
+.essen-favorites {
+    min-width: 0;
+}
+
+.food-gallery-two {
+    grid-template-columns: 1.4fr 1fr;
+    grid-auto-rows: 360px;
+}
+
+.food-gallery-three {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+}
+
+.food-gallery-large {
+    grid-template-columns: 1fr;
+}
+
+.food-gallery-large img {
+    height: 500px;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.favorite-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    height: 320px;
+}
+
+.favorite-item img,
+.essen-favorite img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.favorite-item:hover img {
+    transform: scale(1.04);
+}
+
+.favorite-item span {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #222222;
+    padding: 9px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.housing-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.housing-card h3 a:hover {
+    color: #d34a3a;
+}
+
+.reisen-section {
+    padding: 80px 0;
+}
+
+.reisen-header {
+    max-width: 760px;
+    margin-bottom: 50px;
+}
+
+.reisen-label {
+    margin: 0 0 12px;
+    color: #d84a3a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.reisen-header h1 {
+    margin: 0 0 18px;
+    font-size: 46px;
+}
+
+.reisen-header > p:last-child {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.reisen-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.reise-card {
+    position: relative;
+    min-width: 0;
+    min-height: 370px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #e7e0d9;
+}
+
+.reise-card > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 370px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.reise-card:hover > img {
+    transform: scale(1.04);
+}
+
+.reise-info {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 24px 24px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.78));
+}
+
+.reise-info span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.reise-info h2 {
+    margin: 8px 0;
+    font-size: 28px;
+}
+
+.reise-info p {
+    max-width: 520px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* FAQ PAGE */
+.faq-section {
+    padding: 70px 0 110px;
+}
+
+.faq-hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: stretch;
+    gap: 55px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.faq-hero-content {
+    align-self: center;
+    padding: 30px 0;
+}
+
+.faq-eyebrow {
+    display: block;
+    color: #d84a3a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.faq-hero-content h1 {
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin: 25px 0;
+}
+
+.faq-hero-content h1 em {
+    display: block;
+    color: #d84a3a;
+    font-style: normal;
+}
+
+.faq-hero-content > p {
+    max-width: 470px;
+    font-size: 17px;
+    line-height: 1.85;
+    color: #555;
+}
+
+.faq-explore {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid #d84a3a;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.faq-explore:hover {
+    color: #d84a3a;
+}
+
+.faq-explore:focus-visible {
+    outline: 2px solid #222;
+    outline-offset: 4px;
+}
+
+.faq-hero-image {
+    position: relative;
+}
+
+.faq-hero-image img {
+    display: block;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.faq-image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.faq-section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    scroll-margin-top: 100px;
+}
+
+.faq-section-heading h2 {
+    font-size: clamp(28px, 3.5vw, 42px);
+    margin: 12px 0 0;
+    letter-spacing: -1px;
+}
+
+.faq-heading-icon {
+    font-size: 42px;
+    color: #d84a3a;
+}
+
+.faq-list {
+    max-width: 100%;
+    border-top: 1px solid #d7d7d7;
+}
+
+.faq-item {
+    border-bottom: 1px solid #d7d7d7;
+    transition: background 0.2s ease;
+}
+
+.faq-item[open] {
+    background: #fff;
+}
+
+.faq-item summary {
+    display: flex;
+    align-items: center;
+    min-height: 95px;
+    padding: 25px 75px 25px 25px;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.faq-question-number {
+    flex-shrink: 0;
+    margin-right: 24px;
+    color: #d84a3a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #d84a3a;
+    border-radius: 50%;
+    color: #d84a3a;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+    background: #d84a3a;
+    color: #fff;
+}
+
+.faq-answer {
+    max-width: 850px;
+    padding: 0 75px 32px 25px;
+}
+
+.faq-answer p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: #555;
+    margin: 0 0 18px;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item summary:hover {
+    color: #d84a3a;
+}
+
+.faq-item summary:focus-visible {
+    outline: 2px solid #d84a3a;
+    outline-offset: 4px;
+}
+
+.fact h4 {
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+.fact p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.uni-erfahrung {
+    margin-top: 70px;
+    padding-top: 10px;
+}
+
+.uni-erfahrung .section-label {
+    color: #d84a3a;
+    margin-bottom: 35px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+    row-gap: 55px;
+}
+
+.experience-item {
+    padding-top: 22px;
+    border-top: 1px solid #d8d8d8;
+}
+
+.experience-number {
+    display: block;
+    color: #d34a3a;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.experience-item h3 {
+    font-size: 25px;
+    margin: 0 0 14px;
+}
+
+.experience-item p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 520px;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 800px;
+}
+
+/* Handy */
+@media (max-width: 800px) {
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero-text {
+        margin: 6%;
+        padding: 28px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .profil-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .profil-image img {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .uni-intro {
+        flex-direction: column;
+    }
+
+    .campus-image {
+        width: 100%;
+    }
+
+    .uni-facts,
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid {
+        row-gap: 35px;
+    }
+
+    .student-life-header {
+        margin-bottom: 40px;
+    }
+
+    .life-block,
+    .life-block.reverse {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .life-block.reverse > img,
+    .life-block.reverse .life-text {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .life-block > img {
+        height: 260px;
+    }
+
+    .life-text h3 {
+        font-size: 26px;
+    }
+
+    .wohnen-header {
+        margin-bottom: 40px;
+    }
+
+    .wohnen-main {
+        grid-template-columns: 1fr;
+    }
+
+    .wohnen-image img {
+        height: 400px;
+    }
+
+    .wohnen-facts,
+    .housing-options {
+        grid-template-columns: 1fr;
+    }
+
+    .wohnen-header h1 {
+        font-size: 38px;
+    }
+
+    .essen-section {
+        padding: 60px 0;
+    }
+
+    .essen-header {
+        margin-bottom: 45px;
+    }
+
+    .food-block {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .food-gallery-three,
+    .food-gallery-two,
+    .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .food-gallery-two {
+        grid-auto-rows: 300px;
+    }
+
+    .food-gallery-three {
+        grid-auto-rows: 280px;
+    }
+
+    .food-gallery-large img {
+        height: 320px;
+    }
+
+    .favorite-item {
+        height: 300px;
+    }
+
+    .essen-header h2 {
+        font-size: 36px;
+    }
+
+    .essen-block {
+        margin-bottom: 60px;
+    }
+
+    .essen-gallery.two-photos,
+    .essen-favorites {
+        grid-template-columns: 1fr;
+    }
+
+    .two-photos {
+        height: auto;
+    }
+
+    .essen-gallery.one-photo img,
+    .essen-gallery.two-photos img {
+        height: 280px;
+    }
+
+    .essen-favorite {
+        height: 280px;
+    }
+
+    .reisen-section {
+        padding: 60px 0;
+    }
+
+    .faq-section {
+        padding: 40px 0 70px;
+    }
+
+    .faq-hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin-bottom: 70px;
+    }
+
+    .faq-hero-content {
+        padding: 0;
+    }
+
+    .faq-hero-content h1 {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    .faq-hero-image img {
+        height: 360px;
+    }
+
+    .faq-section-heading {
+        align-items: center;
+    }
+
+    .faq-heading-icon {
+        font-size: 30px;
+    }
+
+    .faq-item summary {
+        min-height: 80px;
+        font-size: 17px;
+        padding: 20px 60px 20px 12px;
+    }
+
+    .faq-item summary::after {
+        right: 12px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .faq-question-number {
+        margin-right: 12px;
+    }
+
+    .faq-answer {
+        padding: 0 20px 25px 12px;
+    }
+
+    .faq-answer p {
+        font-size: 16px;
+    }
+
+    .reisen-header h1 {
+        font-size: 36px;
+    }
+
+    .reisen-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .reise-card,
+    .reise-card > img {
+        min-height: 320px;
+    }
+
+    .reise-info {
+        padding: 50px 20px 20px;
+    }
+}
